@@ -13,7 +13,7 @@
 <body>
 
 <?php
-    echo "Aktualna pogoda w Polsce <br />";
+    echo "Aktualna pogoda w Polsce - dane IMGW<br />";
     $dataJSON = file_get_contents("https://danepubliczne.imgw.pl/api/data/synop/", true);
     $DaneGotowe = json_decode($dataJSON, true);
     echo '
